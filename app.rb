@@ -24,6 +24,10 @@ end
     end
   end
 
+ @client.home_timeline.each do |tweet|
+    puts "\e[1m" + tweet.user.name + "\e[100m" + "[ID:" + tweet.user.screen_name + "]"
+    puts "\e[0m" + tweet.text
+  end
 
 
 
